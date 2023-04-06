@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HPCharacterFragment">
+    <fragment
+        android:id="@+id/HPCharacterFragment"
+        android:name="com.wakacare.harrypotter.ui.fragments.HPCharacterFragment"
+        android:label="fragment_h_p_character"
+        tools:layout="@layout/fragment_h_p_character" >
+        <action
+            android:id="@+id/action_HPCharacterFragment_to_HPCharacterDetailsFragment"
+            app:destination="@id/HPCharacterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HPCharacterDetailsFragment"
+        android:name="com.wakacare.harrypotter.ui.fragments.HPCharacterDetailsFragment"
+        android:label="fragment_h_p_character_details"
+        tools:layout="@layout/fragment_h_p_character_details" />
+</navigation>
